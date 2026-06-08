@@ -1,7 +1,7 @@
 # Polyglot DSA 🚀
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Active-brightgreen)](https://watashi.github.io/DSA)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Active-brightgreen)](https://watashi-00.github.io/polyglot-dsa)
 
 A comprehensive, curated collection of Data Structures and Algorithms (DSA) implemented across multiple programming languages. This repository serves as a reference guide and learning resource for developers studying DSA in different paradigms, from low-level Assembly to high-level Python.
 
