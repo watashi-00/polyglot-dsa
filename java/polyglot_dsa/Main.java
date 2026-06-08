@@ -1,4 +1,4 @@
-package java.watashi;
+package java.polyglot_dsa;
 
 public class Main {
    
