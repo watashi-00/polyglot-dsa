@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polyglot DSA | Data Structures & Algorithms Collection</title>
+    <meta name="description" content="A curated collection of Data Structures and Algorithms implemented in multiple programming languages, including Assembly, C, C++, Java, JS, Python, and Zig.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="badge-wrapper">
+                <span class="badge-dot"></span>
+                <span>Active Project</span>
+            </div>
+            <h1>Polyglot DSA</h1>
+            <p class="subtitle">A comprehensive, curated collection of Data Structures and Algorithms implemented across multiple programming languages.</p>
+            
+            <div class="stats-container">
+                <div class="stat-item">
+                    <i data-lucide="code-2" style="color: #6366f1;"></i>
+                    <div>
+                        <span class="stat-number">7</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i data-lucide="book-open" style="color: #10b981;"></i>
+                    <div>
+                        <span class="stat-number">DSA</span>
+                        <span class="stat-label">Reference</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i data-lucide="shield-check" style="color: #f7a41d;"></i>
+                    <div>
+                        <span class="stat-number">MIT</span>
+                        <span class="stat-label">License</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <i data-lucide="search" class="search-icon"></i>
+                <input type="text" id="searchInput" class="search-input" placeholder="Search languages or keywords...">
+            </div>
+        </header>
+
+        <!-- Languages Grid -->
+        <main class="grid" id="languagesGrid">
+            
+            <!-- Assembly -->
+            <a href="https://github.com/watashi/DSA/tree/main/asm" class="card lang-asm" data-lang="assembly asm lowlevel registers">
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i data-lucide="cpu"></i>
+                    </div>
+                    <span class="lang-tag">x86_64</span>
+                </div>
+                <div class="card-body">
+                    <h3>Assembly</h3>
+                    <p>Low-level register manipulations, stack allocation, system calls, and direct memory interactions.</p>
+                </div>
+                <div class="card-footer">
+                    <span>Explore Code</span>
+                    <i data-lucide="arrow-right" class="arrow-icon" style="width: 16px; height: 16px;"></i>
+                </div>
+            </a>
+
+            <!-- C -->
+            <a href="https://github.com/watashi/DSA/tree/main/c" class="card lang-c" data-lang="c pointers manual memory structures">
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i data-lucide="binary"></i>
+                    </div>
+                    <span class="lang-tag">C99 / C11</span>
+                </div>
+                <div class="card-body">
+                    <h3>C</h3>
+                    <p>Manual memory allocation (malloc/free), pointers, custom structs, and core performance algorithms.</p>
+                </div>
+                <div class="card-footer">
+                    <span>Explore Code</span>
+                    <i data-lucide="arrow-right" class="arrow-icon" style="width: 16px; height: 16px;"></i>
+                </div>
+            </a>
+
+            <!-- C++ -->
+            <a href="https://github.com/watashi/DSA/tree/main/cpp" class="card lang-cpp" data-lang="c++ cpp oop stl templates">
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i data-lucide="terminal"></i>
+                    </div>
+                    <span class="lang-tag">C++17 / C++20</span>
+                </div>
+                <div class="card-body">
+                    <h3>C++</h3>
+                    <p>Standard Template Library (STL), object-oriented design, template metaprogramming, and structures.</p>
+                </div>
+                <div class="card-footer">
+                    <span>Explore Code</span>
+                    <i data-lucide="arrow-right" class="arrow-icon" style="width: 16px; height: 16px;"></i>
+                </div>
+            </a>
+
+            <!-- Java -->
+            <a href="https://github.com/watashi/DSA/tree/main/java" class="card lang-java" data-lang="java oop robust collections enterprise">
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i data-lucide="coffee"></i>
+                    </div>
+                    <span class="lang-tag">Java 17+</span>
+                </div>
+                <div class="card-body">
+                    <h3>Java</h3>
+                    <p>Robust object-oriented implementations, generics, Collections Framework, and unit testing.</p>
+                </div>
+                <div class="card-footer">
+                    <span>Explore Code</span>
+                    <i data-lucide="arrow-right" class="arrow-icon" style="width: 16px; height: 16px;"></i>
+                </div>
+            </a>
+
+            <!-- JavaScript -->
+            <a href="https://github.com/watashi/DSA/tree/main/js" class="card lang-js" data-lang="javascript js web node dynamic prototypes">
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i data-lucide="code"></i>
+                    </div>
+                    <span class="lang-tag">ES6+</span>
+                </div>
+                <div class="card-body">
+                    <h3>JavaScript</h3>
+                    <p>Dynamic structure implementations, functional arrays, prototype-based OOP, and Node.js execution.</p>
+                </div>
+                <div class="card-footer">
+                    <span>Explore Code</span>
+                    <i data-lucide="arrow-right" class="arrow-icon" style="width: 16px; height: 16px;"></i>
+                </div>
+            </a>
+
+            <!-- Python -->
+            <a href="https://github.com/watashi/DSA/tree/main/python" class="card lang-python" data-lang="python py script readable dynamic structures">
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i data-lucide="file-code"></i>
+                    </div>
+                    <span class="lang-tag">Python 3.x</span>
+                </div>
+                <div class="card-body">
+                    <h3>Python</h3>
+                    <p>Clean, readable implementations focusing on algorithmic logic, dictionaries, and list comprehension.</p>
+                </div>
+                <div class="card-footer">
+                    <span>Explore Code</span>
+                    <i data-lucide="arrow-right" class="arrow-icon" style="width: 16px; height: 16px;"></i>
+                </div>
+            </a>
+
+            <!-- Zig -->
+            <a href="https://github.com/watashi/DSA/tree/main/zig" class="card lang-zig" data-lang="zig systems safety explicit allocators">
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i data-lucide="layers"></i>
+                    </div>
+                    <span class="lang-tag">Zig 0.11+</span>
+                </div>
+                <div class="card-body">
+                    <h3>Zig</h3>
+                    <p>Modern systems programming, explicit memory allocator usage, comptime operations, and robust safety features.</p>
+                </div>
+                <div class="card-footer">
+                    <span>Explore Code</span>
+                    <i data-lucide="arrow-right" class="arrow-icon" style="width: 16px; height: 16px;"></i>
+                </div>
+            </a>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Polyglot DSA Project. Built with passion for programmers.</p>
+            <div class="footer-links">
+                <a href="https://github.com/watashi/DSA" id="repoFooterLink"><i data-lucide="github" style="width: 16px; height: 16px; display: inline; vertical-align: text-bottom; margin-right: 4px;"></i>GitHub Repository</a>
+                <span style="color: var(--text-muted);">•</span>
+                <a href="LICENSE">MIT License</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Search filtering logic
+        const searchInput = document.getElementById('searchInput');
+        const cards = document.querySelectorAll('.card');
+
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            
+            cards.forEach(card => {
+                const searchTags = card.getAttribute('data-lang').toLowerCase();
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(query) || description.includes(query) || searchTags.includes(query)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Dynamic GitHub URLs generation based on current context
+        (function() {
+            const hostname = window.location.hostname;
+            const pathname = window.location.pathname;
+            
+            let username = 'watashi';
+            let repoName = 'DSA';
+            
+            // Check if served on github pages: username.github.io/repo/
+            if (hostname.includes('.github.io')) {
+                username = hostname.split('.')[0];
+                const pathParts = pathname.split('/').filter(Boolean);
+                if (pathParts.length > 0) {
+                    repoName = pathParts[0];
+                }
+            }
+            
+            const baseUrl = `https://github.com/${username}/${repoName}`;
+            
+            // Update cards links
+            const languages = ['asm', 'c', 'cpp', 'java', 'js', 'python', 'zig'];
+            languages.forEach(lang => {
+                const card = document.querySelector(`.lang-${lang}`);
+                if (card) {
+                    card.href = `${baseUrl}/tree/main/${lang}`;
+                }
+            });
+            
+            // Update footer repo link
+            const repoFooterLink = document.getElementById('repoFooterLink');
+            if (repoFooterLink) {
+                repoFooterLink.href = baseUrl;
+            }
+        })();
+    </script>
+</body>
+</html>
