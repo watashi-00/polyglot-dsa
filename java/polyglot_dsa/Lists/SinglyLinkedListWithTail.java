@@ -26,5 +26,16 @@ public class SinglyLinkedListWithTail {
         }
         size++; //increment the size of the list by 1
     }
-    
+
+    public SNode getHead() {
+        return head;
+    }
+
+    public SNode getTail() {
+        return tail;
+    }
+
+    public int getSize() {
+        return size;
+    }
 }
