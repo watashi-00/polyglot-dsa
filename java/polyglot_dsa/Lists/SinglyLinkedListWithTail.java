@@ -27,6 +27,27 @@ public class SinglyLinkedListWithTail {
         size++; //increment the size of the list by 1
     }
 
+    public void printList() {
+        SNode current = head; //start from the head of the list
+        while (current != null) { //traverse the list until we reach the end (null)
+            System.out.print(current.getValue() + " -> "); //print the value of the current node followed by an arrow
+            current = current.getNext(); //move to the next node in the list
+        }
+        System.out.println("null"); //after printing all nodes, print null to indicate the end of the list
+    }
+
+    @Override
+    public String toString() {
+        StringBuffer sb = new StringBuffer(); //using StringBuffer for efficient string concatenation
+        SNode current = head; //start from the head of the list
+        while (current != null) { //traverse the list until we reach the end (null)
+            sb.append(current.getValue()).append(" -> "); //append the value of the current node followed by an arrow to the StringBuffer
+            current = current.getNext(); //move to the next node in the list
+        }
+        sb.append("null"); //after appending all nodes, append null to indicate the end of the list
+        return sb.toString(); //convert the StringBuffer to a String and return 
+    }
+
     public SNode getHead() {
         return head;
     }
