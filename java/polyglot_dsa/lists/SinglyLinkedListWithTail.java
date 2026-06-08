@@ -1,6 +1,6 @@
-package java.polyglot_dsa.Lists;
+package polyglot_dsa.lists;
 
-import java.polyglot_dsa.Nodes.SNode;
+import polyglot_dsa.nodes.SNode;
 
 public class SinglyLinkedListWithTail {
     private SNode head; //reference to the first Node in the list e.g contains 3 nodes [head] -> [node1] -> [node2] -> null
@@ -40,7 +40,7 @@ public class SinglyLinkedListWithTail {
         size--;             //decrement the size of the list by 1
     }
 
-    
+
 
     public void printList() {
         SNode current = head; //start from the head of the list

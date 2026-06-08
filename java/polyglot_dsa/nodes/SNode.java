@@ -1,4 +1,4 @@
-package java.polyglot_dsa.Nodes;
+package polyglot_dsa.nodes;
 
 
 //* Singly Linked Node, contains a value and a reference to the next node in the list.*/
