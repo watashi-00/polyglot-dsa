@@ -20,12 +20,27 @@ public class SinglyLinkedListWithTail {
             head = newNode;
             tail = newNode;
             //visually: [head/tail] -> [newNode] -> null
-        } else { // if head is not null, it means the list is not empty,
+        } else {            // if head is not null, it means the list is not empty,
             tail.setNext(newNode); //link the current tail to the new node, e.g [head] -> [node1] -> [tail] -> [newNode] -> null
             tail = newNode; //update the tail reference to the new node, e.g [head] -> [node1] -> [node2] -> [tail/newNode] -> null
         }
-        size++; //increment the size of the list by 1
+        size++;             //increment the size of the list by 1
     }
+
+    public void remove() {
+        if (head == null) { // if head is null, it means the list is empty, so we cannot remove any nodes
+            return;         //exit the method without doing anything
+        }
+        if (head == tail) { // if head is equal to tail, it means the list has only one node
+            head = null;    //set head to null, e.g [head/tail] -> null
+            tail = null;    //set tail to null, e.g [head/tail] -> null
+        } else {            // if head is not equal to tail, it means the list has more than one node
+            head = head.getNext(); //update the head reference to the next node, e.g [head] -> [node1] -> [tail] -> null becomes [head/node1] -> [tail] -> null
+        }
+        size--;             //decrement the size of the list by 1
+    }
+
+    
 
     public void printList() {
         SNode current = head; //start from the head of the list
