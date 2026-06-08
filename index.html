@@ -56,7 +56,7 @@
         <main class="grid" id="languagesGrid">
             
             <!-- Assembly -->
-            <a href="https://github.com/watashi/DSA/tree/main/asm" class="card lang-asm" data-lang="assembly asm lowlevel registers">
+            <a href="https://github.com/watashi-00/polyglot-dsa/tree/main/asm/" class="card lang-asm" data-lang="assembly asm lowlevel registers">
                 <div class="card-header">
                     <div class="icon-box">
                         <i data-lucide="cpu"></i>
@@ -74,7 +74,7 @@
             </a>
 
             <!-- C -->
-            <a href="https://github.com/watashi/DSA/tree/main/c" class="card lang-c" data-lang="c pointers manual memory structures">
+            <a href="https://github.com/watashi-00/polyglot-dsa/tree/main/c/" class="card lang-c" data-lang="c pointers manual memory structures">
                 <div class="card-header">
                     <div class="icon-box">
                         <i data-lucide="binary"></i>
@@ -92,7 +92,7 @@
             </a>
 
             <!-- C++ -->
-            <a href="https://github.com/watashi/DSA/tree/main/cpp" class="card lang-cpp" data-lang="c++ cpp oop stl templates">
+            <a href="https://github.com/watashi-00/polyglot-dsa/tree/main/cpp/" class="card lang-cpp" data-lang="c++ cpp oop stl templates">
                 <div class="card-header">
                     <div class="icon-box">
                         <i data-lucide="terminal"></i>
@@ -110,7 +110,7 @@
             </a>
 
             <!-- Java -->
-            <a href="https://github.com/watashi/DSA/tree/main/java" class="card lang-java" data-lang="java oop robust collections enterprise">
+            <a href="https://github.com/watashi-00/polyglot-dsa/tree/main/java/" class="card lang-java" data-lang="java oop robust collections enterprise">
                 <div class="card-header">
                     <div class="icon-box">
                         <i data-lucide="coffee"></i>
@@ -128,7 +128,7 @@
             </a>
 
             <!-- JavaScript -->
-            <a href="https://github.com/watashi/DSA/tree/main/js" class="card lang-js" data-lang="javascript js web node dynamic prototypes">
+            <a href="https://github.com/watashi-00/polyglot-dsa/tree/main/js/" class="card lang-js" data-lang="javascript js web node dynamic prototypes">
                 <div class="card-header">
                     <div class="icon-box">
                         <i data-lucide="code"></i>
@@ -146,7 +146,7 @@
             </a>
 
             <!-- Python -->
-            <a href="https://github.com/watashi/DSA/tree/main/python" class="card lang-python" data-lang="python py script readable dynamic structures">
+            <a href="https://github.com/watashi-00/polyglot-dsa/tree/main/python/" class="card lang-python" data-lang="python py script readable dynamic structures">
                 <div class="card-header">
                     <div class="icon-box">
                         <i data-lucide="file-code"></i>
@@ -164,7 +164,7 @@
             </a>
 
             <!-- Zig -->
-            <a href="https://github.com/watashi/DSA/tree/main/zig" class="card lang-zig" data-lang="zig systems safety explicit allocators">
+            <a href="https://github.com/watashi-00/polyglot-dsa/tree/main/zig/" class="card lang-zig" data-lang="zig systems safety explicit allocators">
                 <div class="card-header">
                     <div class="icon-box">
                         <i data-lucide="layers"></i>
@@ -187,7 +187,7 @@
         <footer>
             <p>&copy; 2026 Polyglot DSA Project. Built with passion for programmers.</p>
             <div class="footer-links">
-                <a href="https://github.com/watashi/DSA" id="repoFooterLink"><i data-lucide="github" style="width: 16px; height: 16px; display: inline; vertical-align: text-bottom; margin-right: 4px;"></i>GitHub Repository</a>
+                <a href="https://github.com/watashi-00/polyglot-dsa" id="repoFooterLink"><i data-lucide="github" style="width: 16px; height: 16px; display: inline; vertical-align: text-bottom; margin-right: 4px;"></i>GitHub Repository</a>
                 <span style="color: var(--text-muted);">•</span>
                 <a href="LICENSE">MIT License</a>
             </div>
@@ -223,8 +223,8 @@
             const hostname = window.location.hostname;
             const pathname = window.location.pathname;
             
-            let username = 'watashi';
-            let repoName = 'DSA';
+            let username = 'watashi-00';
+            let repoName = 'polyglot-dsa';
             
             // Check if served on github pages: username.github.io/repo/
             if (hostname.includes('.github.io')) {
@@ -242,7 +242,7 @@
             languages.forEach(lang => {
                 const card = document.querySelector(`.lang-${lang}`);
                 if (card) {
-                    card.href = `${baseUrl}/tree/main/${lang}`;
+                    card.href = `${baseUrl}/tree/main/${lang}/`;
                 }
             });
             
